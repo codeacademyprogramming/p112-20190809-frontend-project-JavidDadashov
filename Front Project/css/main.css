@@ -683,21 +683,6 @@ section .card .card-img .overlay-span {
   overflow: hidden;
 }
 
-.counter-sec .shine-effect::before {
-  position: absolute;
-  top: 0;
-  left: -75%;
-  z-index: 2;
-  display: block;
-  content: '';
-  width: 50%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-  -webkit-transform: skewX(-25deg);
-  transform: skewX(-25deg);
-}
-
 .counter-sec img {
   border-radius: 8px;
 }
@@ -712,7 +697,52 @@ section .card .card-img .overlay-span {
   border-style: none;
 }
 
+.counter-sec .counter-list {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 23px;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.counter-sec .counter-list h2 {
+  font-size: 60px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.counter-sec .counter-list h4 {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.counter-sec .mt-80 {
+  margin-top: 80px;
+}
+
 .pt-100 {
-  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.bg3 {
+  background-image: url(http://keenitsolutions.com/products/html/edulearn/edulearn-demo/images/bg/counter-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+#navbar {
+  z-index: 500;
+  -webkit-transition-delay: 0.40s;
+          transition-delay: 0.40s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

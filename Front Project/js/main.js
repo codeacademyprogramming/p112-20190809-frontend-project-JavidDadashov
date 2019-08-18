@@ -1,5 +1,6 @@
 $(function() {
 
+    // home slider
 $('.slide').owlCarousel({
     loop: true,
     dots: false,
@@ -21,6 +22,7 @@ $('.slide').owlCarousel({
 
 })
 
+//OUR POPULAR COURSES
 $('.slide2').owlCarousel({
     loop: true,
     dots: false,
@@ -54,6 +56,25 @@ function toggleAccordion () {
 }
 
 accordionItems.forEach(item => item.addEventListener('click', toggleAccordion))
+
+
+
+// Sticky navbar
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+
 
 })
 

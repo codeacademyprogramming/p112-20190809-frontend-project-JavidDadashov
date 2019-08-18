@@ -6,6 +6,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+    // header
     .header{
         background-color: black;
         width: 100%;
@@ -69,7 +70,7 @@ body{
 
 
 
-
+//  header top
 .header-top{
     padding: 25px 0 20px;
     background-color: white;
@@ -158,6 +159,15 @@ body{
         .navbar{
             background-color: #212121;
 
+          
+
+
+            // position: fixed;
+            // top: -50px;
+            // width: 100%;
+            // display: block;
+            // transition: top 0.3s;
+            // z-index: 999;
             
             
             li{
@@ -189,11 +199,12 @@ body{
         }
     }
 
+
     .navbar{
        .navbars{
            display: flex;
            justify-content: space-between;
-           align-items: center;   
+           align-items: center; 
 
            .mySidebar{
                display: flex;        
@@ -313,7 +324,7 @@ body{
         }
     }
 }
-
+    // home slider
 .home-slider{
     .slide{
         position: relative;
@@ -379,7 +390,7 @@ body{
         }
 
     }
-
+    // services
     .services{
         .row{
             display: flex;
@@ -437,7 +448,7 @@ body{
             }
         }
     }
-
+    // about us
     #about{
     .about-us{
         margin-top: -30px;
@@ -568,7 +579,7 @@ body{
 
 
     
-
+// our popular
 section{
     .card{
         .card-img{
@@ -643,6 +654,7 @@ section{
 
     // counter sec
     .counter-sec{
+       
      
         .counter-cont{
             .counter-title{
@@ -654,35 +666,22 @@ section{
             p{
                 margin-bottom: 35px;
                color: rgba(255, 255, 255, 0.6);
+              
             }
-        
-
-        
            }
            .counter-img {
             box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
            }
            .shine-effect { 
-         position: relative;
-        overflow: hidden;
-             
+          position: relative;
+         overflow: hidden;
+        
      }
 
-     .shine-effect::before {
-        position: absolute;
-        top: 0;
-        left: -75%;
-        z-index: 2;
-        display: block;
-        content: '';
-        width: 50%;
-        height: 100%;
-        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-        -webkit-transform: skewX(-25deg);
-        transform: skewX(-25deg);
-       
-     }
+
+  
+
+
      img{
         border-radius: 8px;
       
@@ -696,10 +695,63 @@ section{
       border-style: none;
     }
 
+    .counter-list{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 23px;
+    transition: .3s all ease;
+        
+    h2{
+    font-size: 60px;
+    color: #ffffff;
+    margin-bottom: 6px;
     }
 
-.pt-100{
-    padding-bottom: 100px;
+    h4{
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 20px;
+    }
+
+
+
+ }
+
+  .mt-80{
+    margin-top: 80px;
+
 }
 
+
+    }
+
+   
+    .pt-100 {
+    padding-top: 100px;
+}
     
+    .bg3{
+        background-image: url(http://keenitsolutions.com/products/html/edulearn/edulearn-demo/images/bg/counter-bg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center top;
+    }
+
+#navbar{
+    z-index: 500;
+    // transition-duration: 40s; 
+    transition-delay: 0.40s;
+    
+ 
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  
+  }
+  
+  
