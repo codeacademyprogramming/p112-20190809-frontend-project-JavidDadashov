@@ -6,7 +6,7 @@ $('.slide').owlCarousel({
     dots: false,
     nav: false,
     navSpeed: 800,
-    autoplay: false,
+    autoplay: true,
     transitionStyle: "fade",
     responsive: {
         0: {
